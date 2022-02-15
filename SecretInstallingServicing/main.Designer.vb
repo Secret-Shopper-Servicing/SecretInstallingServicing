@@ -31,10 +31,10 @@ Partial Class main
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.MyHealthAssistance = New System.Windows.Forms.TabPage()
-        Me.Drinks = New System.Windows.Forms.TabPage()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Drinks = New System.Windows.Forms.TabPage()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -44,6 +44,7 @@ Partial Class main
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.DDownload = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.WiiFitReminder.SuspendLayout()
         Me.MyHealthAssistance.SuspendLayout()
@@ -152,21 +153,6 @@ Partial Class main
         Me.MyHealthAssistance.TabIndex = 1
         Me.MyHealthAssistance.Text = "MyHealthAssistance"
         '
-        'Drinks
-        '
-        Me.Drinks.BackColor = System.Drawing.Color.GreenYellow
-        Me.Drinks.Controls.Add(Me.DDownload)
-        Me.Drinks.Controls.Add(Me.Label9)
-        Me.Drinks.Controls.Add(Me.Label10)
-        Me.Drinks.Controls.Add(Me.Label11)
-        Me.Drinks.Controls.Add(Me.PictureBox3)
-        Me.Drinks.Font = New System.Drawing.Font("Segoe Script", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Drinks.Location = New System.Drawing.Point(4, 31)
-        Me.Drinks.Name = "Drinks"
-        Me.Drinks.Size = New System.Drawing.Size(532, 328)
-        Me.Drinks.TabIndex = 2
-        Me.Drinks.Text = "Drinks"
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -196,6 +182,21 @@ Partial Class main
         Me.Label8.Size = New System.Drawing.Size(237, 25)
         Me.Label8.TabIndex = 6
         Me.Label8.Text = "ScreenShot Of Softwares ........"
+        '
+        'Drinks
+        '
+        Me.Drinks.BackColor = System.Drawing.Color.GreenYellow
+        Me.Drinks.Controls.Add(Me.DDownload)
+        Me.Drinks.Controls.Add(Me.Label9)
+        Me.Drinks.Controls.Add(Me.Label10)
+        Me.Drinks.Controls.Add(Me.Label11)
+        Me.Drinks.Controls.Add(Me.PictureBox3)
+        Me.Drinks.Font = New System.Drawing.Font("Segoe Script", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Drinks.Location = New System.Drawing.Point(4, 31)
+        Me.Drinks.Name = "Drinks"
+        Me.Drinks.Size = New System.Drawing.Size(532, 328)
+        Me.Drinks.TabIndex = 2
+        Me.Drinks.Text = "Drinks"
         '
         'Label9
         '
@@ -296,16 +297,28 @@ Partial Class main
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
         '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(55, 75)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(83, 29)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "DL-ALL"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.OliveDrab
         Me.ClientSize = New System.Drawing.Size(564, 590)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "main"
@@ -345,5 +358,6 @@ Partial Class main
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
